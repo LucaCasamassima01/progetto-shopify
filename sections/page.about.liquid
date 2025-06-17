@@ -1,0 +1,28 @@
+<section class="about-page">
+  <div class="page-width">
+    <h1>{{ page.title }}</h1>
+    <div class="rte">
+      {{ page.content }}
+    </div>
+  </div>
+</section>
+
+{% stylesheet %}
+  .about-page {
+    padding: 4rem 2rem;
+  }
+
+  .about-page .page-width {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .rte{
+    font-style: italic;
+  }
+{% endstylesheet %}
