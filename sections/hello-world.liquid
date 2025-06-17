@@ -2,53 +2,53 @@
   Welcome to Shopify theme development!
 {% endcomment %}
 
+<script>
+  console.log('Hello, World!');
+</script>
+
 <div class="welcome full-width">
   <div class="welcome-content">
     <div>
-      <h1>Hello, World!</h1>
+      <h1>Benvenuti nel mio primo negozio Online!</h1>
 
       <p class="welcome-description">
-        The Skeleton theme is a minimal, carefully structured Shopify theme designed to help you quickly get started.
-        Designed with modularity, maintainability, and Shopify's best practices in mind.
+        Benvenuti nel mio negozio di elettronica! Qui troverete i migliori prodotti per la tua casa e per il tuo tempo libero.
       </p>
 
       <p class="welcome-description">
-        Themes shape the online store experience for merchants and their customers. Build fast, flexible themes at scale
-        using Liquid, Shopify's theme templating language, along with HTML, CSS, JavaScript, and JSON.
+        Dai televisori 4K ai sistemi di sicurezza, dai computer ai cellulari, qui troverete tutto ci  che ti serve per
+        stare al passo con le ultime tecnologie.
       </p>
     </div>
     <div class="icon">
-      <img src="{{ 'shoppy-x-ray.svg' | asset_url }}" width="300" height="300">
+      <img src="{{ 'negozio-elettronica.avif' | asset_url }}" width="300" height="300">
     </div>
   </div>
 </div>
 
 <div class="highlights">
   <div class="highlight">
-    <h3>Key Concepts</h3>
+    <h3>Il Nostro Negozio</h3>
     <p class="highlight-description">
-      Shopify themes are a package of template files, building blocks, and supporting assets. Use these building blocks
-      to create modular, customizable themes.
+      Il nostro negozio offre una vasta gamma di prodotti di qualità per soddisfare tutte le vostre esigenze. Scopri la nostra offerta e approfitta delle ultime novità a prezzi competitivi.
     </p>
-    <p>{{ 'Learn more about key concepts' | link_to: 'https://shopify.dev/docs/storefronts/themes/architecture' }}</p>
+    <p>{{ 'Scopri di più sul nostro negozio' | link_to: routes.root_url }}</p>
   </div>
 
   <div class="highlight">
-    <h3>Liquid</h3>
+    <h3>Prodotti</h3>
     <p class="highlight-description">
-      The Liquid templating language is the backbone of Shopify themes, and is used to load dynamic content on
-      storefronts. Extend Liquid objects to store and present custom data using metafields.
+      Esplora la nostra collezione di prodotti selezionati con cura per offrirti il meglio in termini di qualità e convenienza. Trova ciò che fa per te!
     </p>
-    <p>{{ 'View the Liquid reference' | link_to: 'https://shopify.dev/docs/api/liquid' }}</p>
+    <p>{{ 'Vai ai prodotti' | link_to: routes.all_products_collection_url }}</p>
   </div>
 
   <div class="highlight">
-    <h3>Best Practices</h3>
+    <h3>Perché Scegliere Noi</h3>
     <p class="highlight-description">
-      To optimize your theme development experience, Shopify has established a set of best practices that you can refer
-      to when developing your theme and setting up your toolchains and processes.
+      Scegliere il nostro negozio significa affidarsi a un servizio clienti eccellente, prodotti di alta qualità e spedizioni rapide. Scopri i vantaggi di acquistare con noi!
     </p>
-    <p>{{ 'Follow best practices' | link_to: 'https://shopify.dev/docs/storefronts/themes/best-practices' }}</p>
+    <p>{{ 'Scopri i vantaggi' | link_to: 'https://example.com/vantaggi' }}</p>
   </div>
 </div>
 
@@ -127,6 +127,10 @@
     color: rgb(92, 95, 98);
     padding: 3px 10px 5px;
     text-decoration: none;
+  }
+
+  .icon img {
+    border-radius: 20%;
   }
 {% endstylesheet %}
 
