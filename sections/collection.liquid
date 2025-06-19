@@ -22,8 +22,8 @@
           %}
         {% endif %}
         <div class="collection-product__content">
-          <p>{{ product.title | escape | link_to: product.url }}</p>
-          <p>{{ product.price | money }}</p>
+          <p class="collection-product__title">{{ product.title | escape | link_to: product.url }}</p>
+          <p class="collection-product__price">{{ product.price | money }}</p>
         </div>
       </div>
     {% endfor %}
@@ -36,6 +36,29 @@
   .collection-products {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin-top: 2em;
+  }
+  .collection-product{
+    width: 300px;
+    padding: 2em;
+    border: 2px solid #f6f6f7;
+    border-radius: 10px;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.16);
+  }
+
+  .collection-product__title a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+  }
+
+  .collection-product__price{
+    font-weight: bold;
+  }
+
+  .collection-product__content p{
+    padding: 1rem;
   }
 {% endstylesheet %}
 
